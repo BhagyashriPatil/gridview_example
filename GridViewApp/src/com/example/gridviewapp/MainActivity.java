@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 				i.putExtra("id", position);
 				startActivity(i);
 			}
-
+			
 			
 		});
     }
