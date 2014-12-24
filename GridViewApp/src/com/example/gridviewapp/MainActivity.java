@@ -3,6 +3,10 @@ package com.example.gridviewapp;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 public class MainActivity extends Activity {
@@ -15,6 +19,14 @@ public class MainActivity extends Activity {
         GridView gridview = (GridView) findViewById(R.id.grid_view);
         gridview.setAdapter(new ImageAdapter(MainActivity.this));
         
+        gridview.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View v, int position,
+					long id) {
+				
+			}
+		});
     }
 
 
